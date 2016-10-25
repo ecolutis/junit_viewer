@@ -1,6 +1,9 @@
 $(function(){
     $('.btdetail').click(function (e) {
-       $(this).parent().find('.suite-contents').toggleClass('hide');
+       var parent = $(this).parent();
+       var content = parent.find('.suite-contents');
+       content.toggleClass('hide');
+       parent.find('.btdetail').text(content.hasClass('hide') ? '+' : '-');
        e.preventDefault();
     });
 

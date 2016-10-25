@@ -6,6 +6,11 @@ body {
     font-size: 14px;
 }
 
+.btdetail {
+    width: 100%;
+    border: none;
+    background: transparent;
+}
 
 .junit_info .suite--failure,
 .junit_info .test--failure {
@@ -35,15 +40,18 @@ body {
 .suite-header {
     border-left: 10px solid #8699a4;
     padding: 5px;
+    background: white;
 }
 
 .suite-passed .suite-header  {
     border-color: #0B9C32;
+    background: #cdf7d8;
 }
 
 .suite-error .suite-header,
 .suite-failure .suite-header  {
     border-color: #9d261d;
+    background: #f7d2cf;
 }
 
 
@@ -55,15 +63,18 @@ body {
     padding: 5px;
     border-top: 1px solid #DDDDDD;
     border-left: 10px solid #8699a4;
+    background: white;
 }
 
 .suite-contents .test-passed  {
     border-left: 10px solid #0B9C32;
+    background: #cdf7d8;
 }
 
 .suite-contents .test-error,
 .suite-contents .test-failure  {
     border-left: 10px solid #9d261d;
+    background: #f7d2cf;
 }
 
 .suite-contents .test__message {

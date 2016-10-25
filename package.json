@@ -1,10 +1,10 @@
 {
-  "name": "junit-viewer",
+  "name": "ecolutis-junit-viewer",
   "version": "4.11.0",
   "description": "A simple and quick tool to view junit results",
   "main": "src/main.js",
   "bin": {
-    "junit-viewer": "./bin/junit-viewer"
+    "junit-viewer": "./bin/ecolutis-junit-viewer"
   },
   "directories": {
     "bin": "./bin",
@@ -19,16 +19,19 @@
   "scripts": {
     "test": "rm -rf junit_viewer_specs/* && jest --port --results=data && ./bin/junit-viewer --results=junit_viewer_specs --save=junit_viewer_specs.html"
   },
-  "author": "Luke Preston <lukejpreston@gmail.com>",
+  "contributors": [
+    "Luke Preston <lukejpreston@gmail.com>",
+    "Flaceliere Brice <contact@b-flaceliere.fr>"
+  ],
   "license": "ISC",
   "repository": {
-    "url": "https://github.com/lukejpreston/junit_viewer.git",
+    "url": "https://github.com/ecolutis/junit_viewer.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/lukejpreston/junit_viewer.git"
+    "url": "https://github.com/ecolutis/junit_viewer.git"
   },
-  "homepage": "https://github.com/lukejpreston/junit_viewer.git",
+  "homepage": "https://github.com/ecolutis/junit_viewer.git",
   "dependencies": {
     "express": "^4.12.4",
     "html-minify": "^0.3.1",

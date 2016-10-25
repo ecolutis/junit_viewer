@@ -1,10 +1,15 @@
-<div class="suite" id="{{id}}">
-    <button class="suite--{{type}} u-full-width round" onclick="toggleContraction(this.parentElement)" onload="setContracted({{contracted}})">
-        <span class="suite__name u-pull-left">{{{name}}}</span>
-        {{{labels}}}
-    </button>
-    <div class="suite__contents {{contracted}}">
-        {{{properties}}}
-        {{{tests}}}
+<div class="suite suite-{{type}}" id="{{id}}">
+    <div class="suite-wrap">
+        <div class="suite-header" on>
+            <div>
+                <span class="text-primary suite-name"><strong>{{{name}}}</strong></span>
+                <div>{{{labels}}}</div>
+            </div>
+            <a class="btdetail" href="#"><strong>[ d&eacute;tail ]</strong></a>
+            <div class="suite-contents hide">
+                {{{properties}}}
+                {{{tests}}}
+            </div>
+        </div>
     </div>
 </div>

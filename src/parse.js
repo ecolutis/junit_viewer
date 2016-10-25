@@ -215,7 +215,7 @@ function extractSuite(suite, suitesToAdd) {
 
     suite.testsuite.forEach(function(childSuite) {
         if (suite.$ && childSuite.$)
-            childSuite.$.name = suite.$.name + ' ' + childSuite.$.name
+            childSuite.$.name = suite.$.name + (suite.$.name == '' ? '' : ' > ') + childSuite.$.name
         suitesToAdd.push(childSuite)
 
         if (childSuite.testsuite)

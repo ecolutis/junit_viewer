@@ -1,10 +1,10 @@
 {
   "name": "ecolutis-junit-viewer",
-  "version": "4.11.0",
+  "version": "4.11.2",
   "description": "A simple and quick tool to view junit results",
   "main": "src/main.js",
   "bin": {
-    "junit-viewer": "./bin/ecolutis-junit-viewer"
+    "ecolutis-junit-viewer": "./bin/ecolutis-junit-viewer"
   },
   "directories": {
     "bin": "./bin",

@@ -2,19 +2,40 @@
 <html>
 
 <head>
-    <title>{{title}}</title>
-    {{{skeleton}}}
+    <title>xUnit - {{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style type="text/css">{{style}}</style>
 </head>
 
 <body>
-    <h1 class="u-full-width">{{title}}</h1>
-    <div class="junit_info">{{{junit_info.suites}}}</div>
-    <div class="junit_info">{{{junit_info.tests}}}</div>
-    <div>
-        <div id="options_container" class="container__options column one">{{{options}}}</div>
-        <div id="suites_container" class="u-pull-right columns eleven container__suites">{{{suites}}}</div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">xUnit - {{title}}</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="navbar-nav navbar-right">
+                    <div class="navbar-text junit_info">{{{junit_info.suites}}}</div>
+                    <div class="navbar-text junit_info">{{{junit_info.tests}}}</div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row action-group">
+            <div class="col-md-7">
+                Show :
+                <button class="btn btn-sm btn-primary bt-filter-all">Everything</button>
+                <button class="btn btn-sm btn-default bt-filter-success">Success</button>
+                <button class="btn btn-sm btn-default bt-filter-failure">Failure</button>
+                <button class="btn btn-sm btn-default bt-filter-skipped">Skipped</button>
+            </div>
+        </div>
+        <div id="suites_container">{{{suites}}}</div>
     </div>
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
     <script type="text/javascript">{{{javascript}}}</script>
 </body>
 
